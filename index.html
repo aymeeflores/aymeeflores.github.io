@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+		<link rel="stylesheet" type="text/css" href="./style.css" />
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="./dictionary.js"></script>
+	</head>
+	<body>
+		<!-- <textarea name="s" id="texto"></textarea>
+
+		<div id="translated"></div> -->
+		<!-- bootstrap -->
+		<div class="card-body w-50 d-flex flex-column justify-content-center mx-auto p-5 mainwrapper">
+			<h1 class="maintitle">British English Translator</h1>
+			<div class="form-floating">
+				<textarea class="" placeholder="Insert Text" id="texto"></textarea>
+			</div>
+			<button type="button" id="btn" class="btn btn-lg w-25 m-4 button">Translate</button>
+			<div class="form-floating">
+				<textarea class="" placeholder="Result" id="translated"></textarea>
+			</div>
+		</div>
+
+		<script>
+			let btn = document.getElementById("btn");
+			let texto = document.getElementById("texto");
+
+			btn.addEventListener("click", function () {
+				let ret = doMixup(texto.value);
+				document.getElementById("translated").innerHTML = ret;
+			});
+		</script>
+	</body>
+</html>
